@@ -1,11 +1,11 @@
 import './App.css'
-//import Gallery from './Gallery'
+import Gallery from './Gallery'
 
 const person = {
     name: "Yifan Li",
     theme: {
-        backgroundColor: "black",
-        color: "pink"
+        backgroundColor: "yellow",
+        color: "red"
     }
 };
 
@@ -15,16 +15,17 @@ export default function toDoList()
     const description = "Yifan Li";
     return (
         <div style={person.theme}>
-            <h1>to do list of {JSON.stringify(person)}</h1>
+            <h1>to do list of big scientist</h1>
             <img
                 className='avatar'
                 src={avatar}
                 alt={description}
-            />
+                        />
+                        <Gallery></Gallery>
             <ul>
-                <li>优化视屏电话</li>
-                <li>准备航空学课程</li>
-                <li>研究乙醇燃料引擎</li>
+                <li>E=mc^2</li>
+                <li>Ek = 1/2*m*v^2</li>
+                <li>G = m*g</li>
             </ul>
         </div>
     )
